@@ -1,0 +1,107 @@
+<!-- 
+ Group 4
+ Create a Webpage with embeded content:
+    1. an image
+    2. a video
+    3. audio
+    4. iframe -> embed a youtube video
+-->
+<html>
+<body bgcolor=#b09468>
+</html>
+<title>web page 1</title>
+
+<header>
+    <h1>Miscelanuous Music Info</h1>
+    <p>Posted by Maximilian Tiriobo</p>
+    <p>Headers, Embedded Content, \< dfsf \></p>
+</header>
+
+<h1>Image: </h1>
+    <!-- <h2>  </h2> -->
+    <img src = "NotMyTempo.png" alt="Image"
+    width = "500" height = "250">
+
+<h1>Video: </h1>
+<video width="320" height="240" controls>
+    <source src="1795798-hd_1920_1080_30fps.mp4" type="video/mp4">
+    <!-- <source src="1795798-hd_1920_1080_30fps.mp4" type="video/ogg"> -->
+  Your browser does not support the video tag.
+  </video>
+
+<h1>Audio: </h1>
+    <audio id="myAudio">
+        <source src="ba-dum-tss.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <br>
+    <button onclick="playdrums()">Play Drums</button>
+    <script>
+        function playdrums(){
+            document.getElementById("myAudio").play();
+        }
+    </script>
+<h1>Youtube Video: </h1>
+    <h2> Royal Bangkok Symphony Orchestra (RBSO) Performs
+    <br> Yuan Ya Le and Sukiyaki:</h2>
+    <br> Yuan Ya Le begins at 1:07 // Sukiyaki begins at 3:27
+<br>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/WwYfyL9UC6g?si=Mw8gOQM4ZXPJ77e2" 
+title="YouTube video player" frameborder="0" 
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+referrerpolicy="strict-origin-when-cross-origin" 
+allowfullscreen></iframe>
+
+<br>
+
+
+
+<br>
+
+<br>
+<br>
+
+
+<br>
+
+<fieldset>
+    <legend>RSVP to listen to out cool band</legend>
+    <legend>Enter your credentials: </legend>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name"><br><br>
+    <label for="phone number">Home Phone:</label>
+    <input type="text" id="number" name="number"><br><br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email"><br><br>
+    <label for="birthday">Birthday:</label>
+    <input type="date" id="birthday" name="birthday"><br><br>
+    <label for="A">Choose a Day You are available:</label>
+    <select name = "Days" id="A">
+        <option value="Monday">Monday</option>
+        <option value="Tuesday">Tuesday</option>
+        <option value="Wednesday">Wednesday</option>
+        <option value="Thursday">Thursday</option>
+        <option value="Friday">Friday</option><br><br>
+    </select>
+    <!-- <input type="submit" value="Submit" onclick="dispTxt()"> -->
+</fieldset>
+<label for="box">Do you have any concerns we should know about? :</label>
+<textarea id="box" name="words" rows="1" cols="15"></textarea><br>
+
+<button onclick="dispTxt()">Submit</button>
+<p id="output"></p>
+
+<script>
+    function dispTxt(){
+        document.getElementById("output").textContent = "Recieved, Thank You for filling out the form."
+    }
+</script>
+
+
+<br>
+<br>
+<br>
+<br>
+
+</html>
+</body>
