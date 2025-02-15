@@ -72,6 +72,21 @@ header {
     font-family: 'Pacifico', sans-serif;
     padding: 15px 0;
     text-align: center;
+    text-shadow: 2px 2px 5px black; /*shadow on header*/
+    line-height: 12px; /*scooches the two lines closer together*/
+}
+
+/*this is the rest of the shadow stuff*/
+.titleofsite {
+    text-shadow: 2px 2px 5px #6d6d6d; /*light gray shadow*/
+}
+
+.browntitle {
+    text-shadow: 2px 2px 5px var(--primary-color);
+}
+
+.whiteshadow {
+    text-shadow: 2px 2px 5px white;
 }
 
 .topPart {
