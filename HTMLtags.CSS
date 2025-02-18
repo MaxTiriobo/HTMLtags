@@ -187,7 +187,22 @@ img {
     display: block;
     /* centers the image */
     margin: 0 auto; 
+
+    /* Part of Image Rescaling */
+    max-width: 50%;
+    height: auto;
+
+    border: 5px solid #333;
+    border-radius: 8px;
+
+    /* Part of the Image Hovering Thing */
+    transition: transform 0.3s ease;
 }
+
+img:hover {
+    transform: scale(1.1); /* Scale the image by 10% */
+  }
+
 
 button {
     display: block;
@@ -200,7 +215,14 @@ video {
     display: block;
     /* centers video */
     margin: 0 auto;
+
+    /*Added with media enhancments*/
+    width: 50%;
+    height: auto;
+    border: 5px solid #333;
+    border-radius: 8px;
 }
+
 iframe {
     display: block;
     /* centers video */
@@ -214,3 +236,49 @@ fieldset{
     background-color: #f9f9f9;
     color: #000000;
 }
+
+/* Updates to the Video tag to allow for the features she wanted */
+.video-container {
+    position: relative;
+    max-width: 600px;
+    margin: auto;
+  }
+
+  .controls {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+  }
+
+  .controls button, .controls input {
+    background: #fff;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+  }
+
+  .controls .play-pause {
+    background: #00f;
+    color: #fff;
+  }
+
+  .controls .mute {
+    background: #f00;
+    color: #fff;
+  }
+
+  audio {
+    display: block;
+    /* centers audio */
+    margin: 0 auto;
+
+    width: 50%;
+    background-color: #000000;
+    border-radius: 16px;
+    box-shadow: 0px 4px 6px rgb(0, 0, 0);
+  }
