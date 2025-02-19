@@ -22,12 +22,16 @@
         <div><a href="#target">Go to Filedset</a></div>
     </div>
 </div>
+
+
+
 <div class="creators" id="creators">
     <header>
         <h3>Created by Maximilian Tiriobo</h3>
         <h4>Aided By James Feeney, Annastasia Williams</h4>
     </header>
 </div>
+
 
 
 <main>
@@ -104,28 +108,29 @@
 <!-- <source src="1795798-hd_1920_1080_30fps.mp4" type="video/ogg"> -->
 Your browser does not support the video tag.
 </video>
+
 <h1>Video Audio:</h1>
 <audio id="myAudio" controls>
     <source src="Spring-Flowers.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
 </audio>
 
-
 <div id="audio" class="audio">
     <h1 class="whiteshadow">Audio: </h1>
-        <audio id="myAudio">
+        <audio id="badum">
             <source src="ba-dum-tss.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
         </audio>
         <br>
         <button onclick="playdrums()">Play Drums</button>
-        <script>
-            function playdrums(){
-                document.getElementById("myAudio").play();
-            }
-        </script>
+       
 </div>
 
+<script>
+    function playdrums(){
+        document.getElementById("badum").play();
+    }
+</script>
 
 <div id="target" class="RSVP">
     <fieldset>
@@ -156,6 +161,11 @@ Your browser does not support the video tag.
 <button onclick="dispTxt()">Submit</button>
 <p id="output" class="output"></p>
 
+<form>
+    <label for="username">Type Some Text</label>
+    <input type="text" id="username" name="username"></form>
+</form>
+
 <script>
     function dispTxt(){
         document.getElementById("output").textContent = "Recieved, Thank You for filling out the form."
@@ -175,7 +185,7 @@ Your browser does not support the video tag.
 </script>
 <script>
     function scrollToSection() {
-        document.getElementById("audio").scrollIntoView({ behavior: 'smooth' });
+        document.getElementById("badum").scrollIntoView({ behavior: 'smooth' });
     }
 </script>
 

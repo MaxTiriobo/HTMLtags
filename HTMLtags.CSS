@@ -10,7 +10,7 @@
     --text-color:  rgb(70, 43, 22);
     --header-color: rgb(70, 43, 22);
     --link-color: #064561;
-    --link-hover-color: #d20e00;
+    --link-hover-color: #28738a;
 }
 
 .flex-container {
@@ -235,6 +235,9 @@ fieldset{
     border-radius: 3px;
     background-color: #f9f9f9;
     color: #000000;
+}
+input:focus {
+  background-color: var(--link-hover-color);
 }
 
 /* Updates to the Video tag to allow for the features she wanted */
