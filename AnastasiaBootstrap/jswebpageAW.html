@@ -1,0 +1,223 @@
+<!--
+ Group 4
+ Create a Webpage with embeded content:
+    1. an image
+    2. a video
+    3. audio
+    4. iframe -> embed a youtube video
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web page 1</title>
+
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="customBootstrap.css">
+    <script src="styling.js"></script>
+    
+</head>
+
+<body class="bg-light">
+    <header>
+        <div class="container sticky-top text-center">
+            <div class="row">
+               <div class="col bg-primary">
+                   <h1>Miscelanuous Music Info</h1>
+                   <h3>Created by Maximilian Tiriobo</h3>
+                   <h4>Aided By James Feeney, Anastasia Williams</h4>
+               </div>
+               <div class="col">
+                   <nav class="navbar bg-dark navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+                       <div class="container-fluid">
+                           <div class="navbar-nav">
+                               <a class="nav-link" href="#musica">Musica</a>
+                               <a class="nav-link" href="#image">Image</a>
+                               <a class="nav-link" href="#video">Video</a>
+                               <a class="nav-link" href="#audio">Audio</a>
+                               <a class="nav-link" href="#rsvp">RSVP</a>
+                   </div> </div> </nav>
+               </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <br>
+        <div class="container">
+            <div class="row">
+                <!--This is the intro body paragraphs and lists for the music blog-->
+                <div class="card bg-secondary mb-3" style="width: 30rem;">
+                    <div class="card-body">
+                        <h2 id="heading1" class="card-header" onmouseover="changeTitle()" onmouseout="changeBack()">Musica</h2>
+                        <!--<h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>-->
+                        <p class="card-text">
+                            Who doesn't love music? Music is one of the many forms of art that
+                            people often find themselves hours upon hours perfecting and creating.
+                        </p>
+                        <p class="card-text">
+                            Regardless of who you are, someone who loves the feeling of action to someone who wishes to feel peaceful, we all have our own meanings
+                            and tastes in music.
+                        </p>
+                        <!--
+                        <a href="#" class="card-link">Card link</a>
+                        <a href="#" class="card-link">Another link</a>-->
+                        <button id="changer" onclick="changeText()">Click to Change Text</button>
+                        <br>
+                    </div>
+                </div> 
+                </div>
+            </div>
+            <div class="row ps-5">
+                <div class="card bg-secondary" style="width: 35rem;">
+                    <div class="card-body">
+                        <h3 class="card-header dropdown-toggle" onclick="toggleDropdown()">Music can be used for many reasons</h3>
+                        <p id="dropdown1"> </p>
+                        <p id="dropdown2"> </p>
+                        <p id="dropdown3"> </p>
+                        <p id="dropdown4"> </p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://www.youtube.com/watch?v=WwYfyL9UC6g&t=2s" class="card-link link-success">Link to RSBO</a>
+                        <a href="https://www.britannica.com/art/music" class="card-link link-success">Link to Music</a>
+                    </div>
+                </div>
+            </div>
+            <br>
+
+            <div class="row">
+                <div class="card bg-secondary text-center" style="width: 45rem;"">
+                    <div class="card-header">
+                        <h3 class="card-header">Example of some really cool musica</h3>
+                    </div>
+                    
+                    <iframe class="card-img-top" width="560" height="315" src="https://www.youtube.com/embed/WwYfyL9UC6g?si=Mw8gOQM4ZXPJ77e2"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen></iframe>
+
+                    <div class="card-body">
+                        <h5 class="card-text">Performed by the Royal Bangkok Symphony Orchestra (RSBO)</h5>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://www.youtube.com/watch?v=WwYfyL9UC6g&t=2s" class="card-link link-success">Link to RSBO</a>
+                        <a href="https://www.britannica.com/art/music" class="card-link link-success">Link to Music</a>
+                    </div>
+                </div>
+            </div>
+            <br />
+            <div class="row">
+                <div class="col">
+                    <div class="card bg-secondary w-75" style="width: 18rem;">
+                        <div class="card-header">
+                            <h3 class="card-header">Image:</h3>
+                        </div>
+                        <img class="card-img-top" src="NotMyTempo.png"
+                             alt="Image"
+                             srcset="NotMyTempo.png 600w" />
+                        <div class="card-footer">
+                            <br />
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col">
+                        <div class="card bg-secondary w-75" style="width: 18rem;">
+                            <div class="card-header">
+                                <h3 class="card-header">Video:</h3>
+                            </div>
+                            <video class="card-img-top" id="video" width="320" height="240" controls>
+                                <source src="Video_Update.mp4" type="video/mp4">
+                                <!-- <source src="1795798-hd_1920_1080_30fps.mp4" type="video/ogg"> -->
+                                Your browser does not support the video tag.
+                            </video>
+                            <div class="card-footer">
+                                <button onclick="toggleMute()">Mute/Unmute</button>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card bg-secondary w-75" style="width: 18rem;">
+                            <div class="card-header">
+                                <h3 class="card-header">Video Audio:</h3>
+                            </div>
+                            <audio id="myAudio" controls>
+                                <source src="Spring-Flowers.mp3" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                            <div class="card-footer">
+                                <br />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <br />
+            <div class="row">
+                <div class="card bg-secondary text-center" style="width: 18rem;">
+                    <div class="card-header">
+                        <h3 class="card-header">Audio:</h3>
+                    </div>
+                    <audio id="badum">
+                        <source src="ba-dum-tss.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <div class="card-footer">
+                        <button onclick="playdrums()">Play Drums</button>
+                    </div>
+                </div>
+
+                <script>
+                    function playdrums() {
+                        document.getElementById("badum").play();
+                    }
+                </script>
+            </div>
+        </div>
+    </main>
+    <br>
+    <br>
+    
+    <fieldset class="rsvp">
+        <legend>RSVP to listen to out cool band</legend>
+        <legend>Enter your credentials: </legend>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+        <label for="phone number">Home Phone:</label>
+        <input type="text" id="number" name="number"><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+        <label for="birthday">Birthday:</label>
+        <input type="date" id="birthday" name="birthday"><br><br>
+        <label for="A">Choose a Day You are available:</label>
+        <select name="Days" id="A">
+            <option value="Monday">Monday</option>
+            <option value="Tuesday">Tuesday</option>
+            <option value="Wednesday">Wednesday</option>
+            <option value="Thursday">Thursday</option>
+            <option value="Friday">Friday</option>
+        </select>
+        <!-- <input type="submit" value="Submit" onclick="dispTxt()"> -->
+    </fieldset>
+    <br />
+    <footer class="bottom">
+        <label for="box">Do you have any concerns we should know about? :</label>
+        <textarea id="box" name="words" rows="1" cols="15"></textarea>
+        <br>
+
+        <div class="btn-group" role="group" aria-label="Basic example">
+            <button type="button" class="btn btn-primary">Save</button>
+            <button type="button" class="btn btn-primary" onclick="dispTxt()">Submit</button>
+        </div>
+
+        <p id="output"></p>
+    </footer>
+    <script>
+        function dispTxt() {
+            document.getElementById("output").textContent = "Recieved, Thank You for filling out the form."
+        }
+    </script>
+
+</body>
+</html>
