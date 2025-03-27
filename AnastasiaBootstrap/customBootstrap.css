@@ -1,0 +1,13 @@
+:root {
+    --bs-primary: #e78f3c;
+    --bs-secondary: #b09468;
+    --bs-dark: rgb(70, 43, 22);
+    --bs-light: #f7d9ab;
+    --bs-success: #064561;
+}
+
+.bg-primary { background-color: var(--bs-primary) !important; }
+.bg-secondary { background-color: var(--bs-secondary) !important; }
+.bg-dark { background-color: var(--bs-dark) !important; }
+.bg-light { background-color: var(--bs-light) !important; }
+.link-success { color: var(--bs-success) !important; }
