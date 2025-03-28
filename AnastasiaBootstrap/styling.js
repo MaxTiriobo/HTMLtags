@@ -27,3 +27,14 @@ function toggleDropdown(){
     toggleCheck = false;
   }
 }
+
+/*<ul>
+  <li class="card-text">
+  -To express the cultural standards of rythm, melody, and harmony
+  </li>
+  <li class="card-text">-To aid in a dancing experience</li>
+  <li class="card-text">-To have shows or movies express emotion and feeling</li>
+  <li class="card-text">
+  -Something for people to listen for a feeling or emotion whenever they please
+</li>
+</ul>"*/

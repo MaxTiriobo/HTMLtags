@@ -81,10 +81,6 @@ header {
     text-shadow: 2px 2px 5px #6d6d6d; /*light gray shadow*/
 }
 
-.card {
-  text-align: center;
-}
-
 .browntitle {
     text-shadow: 2px 2px 5px var(--primary-color);
 }
@@ -191,7 +187,6 @@ img {
     display: block;
     /* centers the image */
     margin: 0 auto; 
-
 
     /* Part of Image Rescaling */
     max-width: 50%;
